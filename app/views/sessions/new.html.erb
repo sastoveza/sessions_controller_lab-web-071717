@@ -1,3 +1,10 @@
+<h2>Provide a Username to Login </h2>
+
+<% if flash[:message] %>
+<% flash [:message] %>
+<% end %>
+
+
 <%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
   <input name=name>
   <input type=submit value='login'>
